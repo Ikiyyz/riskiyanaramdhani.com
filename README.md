@@ -15,8 +15,8 @@ This is **personal website** to show my profile, home, about, experience, and so
 
 ## References
 - [kukuhaldy](https://kukuhaldy.com/)
-## Screenshots
+## Previews
 
 ## home
 
-![Screenshots Home](./screenshots/home.jpg)
+![Previews Home](./previews/home.jpg)
