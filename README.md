@@ -13,6 +13,9 @@ This is **personal website** to show my profile, home, about, experience, and so
 
 - Github: <https://github.com/Riskirizki/>
 
+- Telegram: <https://telegram.com/Ikiyyz_/>
+
+
 ## References
 - [kukuhaldy](https://kukuhaldy.com/)
 ## Previews
