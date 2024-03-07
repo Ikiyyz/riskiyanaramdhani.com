@@ -121,6 +121,20 @@ nav ul li a:hover::before {
   letter-spacing: 0.04em;
 }
 
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 960px;
+    padding: 0 20px;
+  }
+}
+
+/* CSS untuk tampilan ponsel */
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
 .profile-section {
   display: flex;
   align-items: center;
