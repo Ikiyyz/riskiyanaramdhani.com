@@ -160,7 +160,7 @@ nav ul li a:hover::before {
   display: block; /* Menghindari ruang kosong yang tidak diinginkan di sekitar gambar */
   width: 250px;
   height: 350px;
-  margin: 0 auto; /* Pusatkan gambar */
+  margin: 0 auto;
   object-fit: cover;
   border: 4px solid #1b1b1b;
   border-radius: 10px;
