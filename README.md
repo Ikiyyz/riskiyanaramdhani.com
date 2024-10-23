@@ -1,25 +1,8 @@
-# riskiyanaramdhani.com/Personal Website for Riski Yana Ramdhani
+# React + Vite
 
-Hello everyone, welcome to my personal website, where curiosity meets creation and innovation knows no bounds! Get ready to embark on an exhilarating digital adventure where we'll explore the forefront of technology, spark creativity, and ignite passion. Together, let's dive into the boundless opportunities awaiting us!
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This is **personal website** to show my profile, home, about, experience, and social media
+Currently, two official plugins are available:
 
-## Social Media
-
-- Website: <https://riskiyanaramdhani-com.vercel.app/>
-
-- Figma: <https://figma.com/file/kKR5kJE1lNliyerVmLZfSW/riskiyanaramdhani.com>
-
-- Github: <https://github.com/Riskirizki/>
-
-- Telegram: <https://telegram.com/Ikiyyz_/>
-
-## References
-
-- [kukuhaldy](https://kukuhaldy.com/)
-
-## Previews
-
-## home
-
-![Previews Home](./previews/home.jpg)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
