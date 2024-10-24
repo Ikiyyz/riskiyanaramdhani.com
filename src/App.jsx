@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Navbar from "./component/navbar";
-import Home from "./component/home";
-import About from "./component/about";
-import Experience from "./component/experience";
-import Contacts from "./component/contact";
+import Navbar from "./views/navbar";
+import Home from "./views/home";
+import About from "./views/about";
+import Experience from "./views/experience";
+import Contacts from "./views/contact";
 
 function App() {
   const [language, setLanguage] = useState("id");
