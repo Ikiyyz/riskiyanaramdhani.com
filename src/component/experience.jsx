@@ -28,6 +28,7 @@ const Experience = ({ language }) => {
                   src="/assets/project-bootcamp1.jpg"
                   alt="Backend Developer"
                   className="w-full md:max-w-[280px] lg:max-w-[320px] h-auto object-cover rounded-lg transition-transform duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-800"
+                  loading="lazy"
                 />
               </a>
 
@@ -68,6 +69,7 @@ const Experience = ({ language }) => {
                 src="/assets/project-jwt.jpg"
                 alt="Internship"
                 className="w-full md:max-w-[280px] lg:max-w-[320px] h-auto object-cover rounded-lg"
+                loading="lazy"
               />
               <div className="flex flex-col justify-between flex-grow">
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-200 mb-1">
@@ -103,7 +105,7 @@ const Experience = ({ language }) => {
                   src="/assets/project-bootcamp2.jpg"
                   alt="Project React"
                   className="w-full xs:max-w-[100px] sm:max-w-[120px] md:max-w-[280px] lg:max-w-[200px] h-auto object-cover rounded-lg transition-transform duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-800"
-
+                  loading="lazy"
                 />
               </a>
 
@@ -146,35 +148,36 @@ const Experience = ({ language }) => {
           {/* Pengalaman Keempat */}
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-lg shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
-              <img
-                src="/assets/project-node.jpg"
-                alt="Project Node"
-                className="w-full md:max-w-[280px] lg:max-w-[320px] h-auto object-cover rounded-lg"
-              />
+              <a
+                href="https://github.com/ramadhanrizki/nama-repositori"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group w-full md:w-auto flex-shrink-0"
+              >
+                <img
+                  src="/assets/project-jwt.jpg"
+                  alt="Backend JWT"
+                  className="w-full sm:max-w-[200px] h-auto object-cover rounded-lg transition-transform duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-800"
+                  loading="lazy"
+                />
+              </a>
+
               <div className="flex flex-col justify-between flex-grow">
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-200 mb-1">
                   {language === "id"
-                    ? "Project Node (Backend Developer)"
-                    : "Node Project (Backend Developer)"}
+                    ? "Backend Developer (Proyek Pribadi)"
+                    : "Backend Developer (Personal Project)"}
                 </h3>
                 <p className="text-gray-400 mt-1 mb-2 text-sm sm:text-base">
-                  {language === "id" ? "Proyek di" : "Project at"}{" "}
-                  <a
-                    href="https://github.com/ramadhanrizki/project-node"
-                    className="text-blue-400 underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
+                  Proyek Golang
                 </p>
                 <span className="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4">
                   2022
                 </span>
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   {language === "id"
-                    ? "Membangun aplikasi backend menggunakan Node.js dan Express untuk mendukung aplikasi frontend."
-                    : "Building a backend application using Node.js and Express to support the frontend application."}
+                    ? "Mengimplementasikan autentikasi JWT pada sistem backend untuk mengamankan API di proyek pribadi menggunakan Golang."
+                    : "Implemented JWT authentication on the backend system to secure APIs in a personal project using Golang."}
                 </p>
               </div>
             </div>
