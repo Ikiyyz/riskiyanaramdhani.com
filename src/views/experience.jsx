@@ -148,35 +148,48 @@ const Experience = ({ language }) => {
 
           {/* Pengalaman Keempat */}
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-gray-700">
-            <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
-              <img
-                src="/assets/project-bootcamp3.jpg"
-                alt="Project Membangun Website"
-                className="w-full md:max-w-[280px] lg:max-w-[320px] h-auto object-cover rounded-lg"
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="flex flex-col justify-between flex-grow">
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-200 mb-1">
-                  {language === "id"
-                    ? "Membangun Website"
-                    : "Building Websites"}
-                </h3>
-                <p className="text-gray-400 mt-1 mb-2 text-sm sm:text-base">
-                  {language === "id"
-                    ? "Proyek Membangun Website"
-                    : "Building Website Project"}
-                </p>
-                <span className="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4">
-                  2022
-                </span>
-                <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                  {language === "id"
-                    ? "Berkontribusi dalam proyek membangun website untuk klien lokal dan meningkatkan keterampilan pengembangan web."
-                    : "Contributed to projects building websites for local clients and enhanced web development skills."}
-                </p>
+            <a
+              href="https://github.com/ramadhanrizki/sportstat-api"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col md:flex-row items-start w-full h-full"
+            >
+              <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6 w-full h-full">
+                <img
+                  src="/assets/project-bootcamp3.jpg"
+                  alt="SportStat API"
+                  className="w-full h-auto max-w-[280px] md:max-w-[320px] object-cover rounded-lg transition-transform duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-800"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div className="flex flex-col justify-between flex-grow">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-200 mb-1">
+                    {language === "id"
+                      ? "Backend Developer (Bootcamp)"
+                      : "Backend Developer (Bootcamp)"}
+                  </h3>
+                  <p className="text-gray-400 mt-1 mb-2 text-sm sm:text-base">
+                    {language === "id" ? "Bootcamp " : "Bootcamp "}{" "}
+                    <a
+                      href="https://bearmentor.notion.site/"
+                      className="text-blue-400 underline hover:text-blue-300 transition-colors duration-200"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Bear Mentor
+                    </a>
+                  </p>
+                  <span className="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4">
+                    2023
+                  </span>
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
+                    {language === "id"
+                      ? "Mengembangkan SportStat API, API informasi sebagai ensiklopedia digital. Dibangun dengan TypeScript, menggunakan Node.js dan Deno, serta PostgreSQL sebagai basis data, dan dapat di-deploy di Render.com."
+                      : "Developed the SportStat API, an information API serving as a digital encyclopedia. Built with TypeScript, utilizing Node.js and Deno, and PostgreSQL as the database, deployable on Render.com."}
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

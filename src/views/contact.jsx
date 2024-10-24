@@ -77,7 +77,7 @@ const Contact = ({ language }) => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 text-gray-300 hover:text-blue-500 transition"
               >
-                <FaLinkedin className="w-6 h-6" />
+                <FaLinkedin className="w-6 h-6 hidden md:flex" />
                 <span>LinkedIn</span>
               </a>
 
@@ -87,7 +87,7 @@ const Contact = ({ language }) => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 text-gray-300 hover:text-blue-500 transition"
               >
-                <FaGithub className="w-6 h-6" />
+                <FaGithub className="w-6 h-6 hidden md:flex" />
                 <span>GitHub</span>
               </a>
 
@@ -97,7 +97,7 @@ const Contact = ({ language }) => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 text-gray-300 hover:text-blue-500 transition"
               >
-                <FaInstagram className="w-6 h-6" />
+                <FaInstagram className="w-6 h-6 hidden md:flex" />
                 <span>Instagram</span>
               </a>
 
@@ -107,7 +107,7 @@ const Contact = ({ language }) => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 text-gray-300 hover:text-blue-500 transition"
               >
-                <FaTelegram className="w-6 h-6" />
+                <FaTelegram className="w-6 h-6 hidden md:flex" />
                 <span>Telegram</span>
               </a>
             </div>
