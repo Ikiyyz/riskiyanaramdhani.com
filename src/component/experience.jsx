@@ -28,7 +28,9 @@ const Experience = ({ language }) => {
                   src="/assets/project-bootcamp1.jpg"
                   alt="Backend Developer"
                   className="w-full md:max-w-[280px] lg:max-w-[320px] h-auto object-cover rounded-lg transition-transform duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-800"
-                  loading="lazy"
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
                 />
               </a>
 
@@ -70,6 +72,7 @@ const Experience = ({ language }) => {
                 alt="Internship"
                 className="w-full md:max-w-[280px] lg:max-w-[320px] h-auto object-cover rounded-lg"
                 loading="lazy"
+                decoding="async"
               />
               <div className="flex flex-col justify-between flex-grow">
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-200 mb-1">
@@ -106,6 +109,7 @@ const Experience = ({ language }) => {
                   alt="Project React"
                   className="w-full xs:max-w-[100px] sm:max-w-[120px] md:max-w-[280px] lg:max-w-[200px] h-auto object-cover rounded-lg transition-transform duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-800"
                   loading="lazy"
+                  decoding="async"
                 />
               </a>
 
@@ -159,6 +163,7 @@ const Experience = ({ language }) => {
                   alt="Backend JWT"
                   className="w-full sm:max-w-[200px] h-auto object-cover rounded-lg transition-transform duration-300 ease-in-out group-hover:shadow-lg group-hover:shadow-gray-800"
                   loading="lazy"
+                  decoding="async"
                 />
               </a>
 
