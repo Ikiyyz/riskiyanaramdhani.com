@@ -24,7 +24,7 @@ const Contact = ({ language }) => {
             </h3>
             <div className="space-y-6">
               <div className="flex items-center space-x-4 text-gray-300">
-                <Mail className="w-6 h-6 text-blue-500" />
+                <Mail className="w-6 h-6 text-blue-500 flex-shrink-0" />
                 <div>
                   <p className="font-medium">
                     {language === "id" ? "Email" : "Email"}
@@ -39,7 +39,7 @@ const Contact = ({ language }) => {
               </div>
 
               <div className="flex items-center space-x-4 text-gray-300">
-                <Phone className="w-6 h-6 text-blue-500" />
+                <Phone className="w-6 h-6 text-blue-500 flex-shrink-0" />
                 <div>
                   <p className="font-medium">
                     {language === "id" ? "Telepon" : "Phone"}
@@ -54,7 +54,7 @@ const Contact = ({ language }) => {
               </div>
 
               <div className="flex items-center space-x-4 text-gray-300">
-                <MapPin className="w-6 h-6 text-blue-500" />
+                <MapPin className="w-6 h-6 text-blue-500 flex-shrink-0" />
                 <div>
                   <p className="font-medium">
                     {language === "id" ? "Lokasi" : "Location"}
@@ -77,7 +77,7 @@ const Contact = ({ language }) => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 text-gray-300 hover:text-blue-500 transition"
               >
-                <FaLinkedin className="w-6 h-6 hidden md:flex" />
+                <FaLinkedin className="w-6 h-6 flex-shrink-0" />
                 <span>LinkedIn</span>
               </a>
 
@@ -87,7 +87,7 @@ const Contact = ({ language }) => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 text-gray-300 hover:text-blue-500 transition"
               >
-                <FaGithub className="w-6 h-6 hidden md:flex" />
+                <FaGithub className="w-6 h-6 flex-shrink-0" />
                 <span>GitHub</span>
               </a>
 
@@ -97,7 +97,7 @@ const Contact = ({ language }) => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 text-gray-300 hover:text-blue-500 transition"
               >
-                <FaInstagram className="w-6 h-6 hidden md:flex" />
+                <FaInstagram className="w-6 h-6 flex-shrink-0" />
                 <span>Instagram</span>
               </a>
 
@@ -107,7 +107,7 @@ const Contact = ({ language }) => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 text-gray-300 hover:text-blue-500 transition"
               >
-                <FaTelegram className="w-6 h-6 hidden md:flex" />
+                <FaTelegram className="w-6 h-6 flex-shrink-0" />
                 <span>Telegram</span>
               </a>
             </div>
