@@ -4,18 +4,12 @@ const Home = ({ language }) => {
   return (
     <section
       id="home"
-      className="min-h-screen w-full flex items-center justify-center relative py-24 md:py-28"
+      className="min-h-screen w-full flex items-center justify-center relative py-24 md:py-28 bg-black"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 animate-pulse"></div>
-        <div className="absolute inset-0 bg-[url('/api/placeholder/1920/1080')] bg-cover bg-center bg-no-repeat mix-blend-overlay"></div>
-      </div>
-
       <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="w-full md:w-2/5 flex justify-center">
-            <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-gray-700 shadow-2xl transform transition-transform duration-300 hover:scale-105">
+            <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl overflow-hidden border border-white/20 shadow-lg">
               <img
                 src="/assets/profile.jpg"
                 alt="Foto Profil"
@@ -24,25 +18,33 @@ const Home = ({ language }) => {
             </div>
           </div>
 
-          <div className="w-full md:w-3/5 space-y-6">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-left">
-              {language === "id"
-                ? "Hai, Saya Riski, seorang pengembang backend"
-                : "Hi, I’m Riski, a backend developer"}
-            </h1>
 
+          <div className="w-full md:w-3/5 space-y-6">
+            <div className="space-y-1">
+              <h1 className="text-sm sm:text-base lg:text-lg font-medium uppercase tracking-[0.18em] text-white/70">
+                Riski Yana Ramadhan
+              </h1>
+
+              <div className="w-10 h-[1px] bg-white/20"></div>
+
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white tracking-tight leading-tight">
+                Backend Developer
+              </h2>
+            </div>
             <div className="space-y-4">
-              <p className="text-sm sm:text-base text-gray-300 leading-relaxed tracking-wide text-left">
+              <p className="text-sm sm:text-base text-neutral-400 leading-relaxed text-left">
                 {language === "id"
-                  ? "Saya adalah lulusan SMK dengan pengalaman magang sebagai backend developer di PT Top Indo Jatinangor. Melalui pengalaman tersebut, saya telah mendapatkan keahlian dalam pengembangan sistem dan manajemen basis data. Selain itu, saya juga terus mengembangkan kemampuan di bidang teknologi melalui proyek-proyek mandiri."
-                  : "I graduated from vocational school with internship experience as a backend developer at PT Top Indo Jatinangor. Through this experience, I have gained skills in system development and database management. Additionally, I continue to develop my skills in technology through independent projects."}
+                  ? "Lulusan SMK dengan pengalaman magang sebagai backend developer. Terbiasa membangun sistem berbasis web menggunakan Node.js, Express, dan PostgreSQL."
+                  : "A vocational school graduate with internship experience as a backend developer. Experienced in building web-based systems using Node.js, Express, and PostgreSQL."}
               </p>
-              <p className="text-sm sm:text-base text-gray-300 leading-relaxed tracking-wide text-left">
+
+              <p className="text-sm sm:text-base text-neutral-400 leading-relaxed text-left">
                 {language === "id"
-                  ? "Saat ini, saya telah menyelesaikan bootcamp fullstack web development dan lebih fokus pada pengembangan backend, yang semakin memperkuat kompetensi saya di bidang teknologi."
-                  : "Currently, I have completed a fullstack web development bootcamp and am more focused on backend development, further strengthening my competencies in the technology field."}
+                  ? "Telah menyelesaikan bootcamp fullstack web development dan saat ini berfokus pada pengembangan backend, sambil terus mengembangkan kemampuan sebagai fullstack developer."
+                  : "Completed a fullstack web development bootcamp and currently focused on backend development, while continuously growing as a fullstack developer."}
               </p>
             </div>
+
           </div>
         </div>
       </div>

@@ -2,9 +2,8 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-const Navbar = ({ onLanguageChange }) => {
+const Navbar = ({ language, onLanguageChange }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("id");
 
   const scrollToSection = (section) => {
     const element = document.getElementById(section);
@@ -16,7 +15,6 @@ const Navbar = ({ onLanguageChange }) => {
 
   const toggleLanguage = (lang) => {
     if (lang !== language) {
-      setLanguage(lang);
       onLanguageChange(lang);
     }
   };
@@ -32,18 +30,21 @@ const Navbar = ({ onLanguageChange }) => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-gray-900/95 to-black/95 shadow-lg z-50 border-b border-gray-800 backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-black/90 backdrop-blur-md">
       <div className="w-full max-w-[2000px] mx-auto px-6">
         <div className="flex items-center justify-between py-4">
           <h1
-            className="text-2xl font-bold text-gray-300 cursor-pointer hover:text-blue-400 transition-colors duration-300"
+            className="text-xl sm:text-2xl font-semibold tracking-tight text-white cursor-pointer hover:text-neutral-300 transition-colors duration-200"
             onClick={() => scrollToSection("home")}
           >
-            Riski Yana Ramdhani
+            Ramadhan
           </h1>
           <button
+            type="button"
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-gray-300 hover:text-blue-400 transition-colors duration-300"
+            className="md:hidden p-2 text-neutral-400 hover:text-white transition-colors duration-200"
+            aria-expanded={isOpen}
+            aria-label={isOpen ? "Tutup menu" : "Buka menu"}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -55,33 +56,35 @@ const Navbar = ({ onLanguageChange }) => {
                   e.preventDefault();
                   scrollToSection(section.id);
                 }}
-                className="relative inline-block px-3 py-2 text-sm md:text-base text-gray-300 transition-colors duration-300 hover:text-blue-400"
+                className="group relative inline-block px-3 py-2 text-sm md:text-base text-neutral-400 transition-colors duration-200 hover:text-white"
                 href={`/${section.id}`}
               >
                 {section.label}
-                <span className="absolute left-0 right-0 bottom-0 h-1 bg-blue-500 scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+                <span className="absolute left-0 right-0 bottom-0 h-px bg-white/0 group-hover:bg-white/40 transition-colors duration-200" />
               </a>
             ))}
-            <div className="flex items-center text-gray-300">
-              <span className="mr-1">🌐</span>
+            <div className="flex items-center text-neutral-400">
+              <span className="mr-1" aria-hidden>
+                🌐
+              </span>
               <button
+                type="button"
                 onClick={() => toggleLanguage("id")}
-                className={`mr-1 transition-colors duration-300 ${
-                  language === "id"
-                    ? "text-blue-400"
-                    : "text-gray-300 hover:text-blue-400"
-                }`}
+                className={`mr-1 transition-colors duration-200 ${language === "id"
+                    ? "text-white"
+                    : "text-neutral-500 hover:text-white"
+                  }`}
               >
                 ID
               </button>
-              <span className="mx-1 border-l border-gray-600 h-4" />
+              <span className="mx-1 border-l border-white/20 h-4" />
               <button
+                type="button"
                 onClick={() => toggleLanguage("en")}
-                className={`ml-1 transition-colors duration-300 ${
-                  language === "en"
-                    ? "text-blue-400"
-                    : "text-gray-300 hover:text-blue-400"
-                }`}
+                className={`ml-1 transition-colors duration-200 ${language === "en"
+                    ? "text-white"
+                    : "text-neutral-500 hover:text-white"
+                  }`}
               >
                 EN
               </button>
@@ -89,8 +92,8 @@ const Navbar = ({ onLanguageChange }) => {
           </div>
         </div>
         {isOpen && (
-          <div className="md:hidden animate-fadeIn">
-            <div className="py-4 border-t border-gray-800">
+          <div className="md:hidden animate-fade-in">
+            <div className="py-4 border-t border-white/10">
               {sections.map((section) => (
                 <a
                   key={section.id}
@@ -98,32 +101,34 @@ const Navbar = ({ onLanguageChange }) => {
                     e.preventDefault();
                     scrollToSection(section.id);
                   }}
-                  className="block w-full px-4 py-3 text-left text-gray-300 hover:text-blue-400 hover:bg-gray-800/50 transition-colors duration-300 rounded-md cursor-pointer"
+                  className="block w-full px-4 py-3 text-left text-neutral-400 hover:text-white hover:bg-white/5 transition-colors duration-200 rounded-md cursor-pointer"
                   href={`/${section.id}`}
                 >
                   {section.label}
                 </a>
               ))}
-              <div className="flex items-center text-gray-300">
-                <span className="mr-1">🌐</span>
+              <div className="flex items-center text-neutral-400 px-4 pt-2">
+                <span className="mr-1" aria-hidden>
+                  🌐
+                </span>
                 <button
+                  type="button"
                   onClick={() => toggleLanguage("id")}
-                  className={`mr-1 transition-colors duration-300 ${
-                    language === "id"
-                      ? "text-blue-400"
-                      : "text-gray-300 hover:text-blue-400"
-                  }`}
+                  className={`mr-1 transition-colors duration-200 ${language === "id"
+                      ? "text-white"
+                      : "text-neutral-500 hover:text-white"
+                    }`}
                 >
                   ID
                 </button>
-                <span className="mx-1 border-l border-gray-600 h-4" />
+                <span className="mx-1 border-l border-white/20 h-4" />
                 <button
+                  type="button"
                   onClick={() => toggleLanguage("en")}
-                  className={`ml-1 transition-colors duration-300 ${
-                    language === "en"
-                      ? "text-blue-400"
-                      : "text-gray-300 hover:text-blue-400"
-                  }`}
+                  className={`ml-1 transition-colors duration-200 ${language === "en"
+                      ? "text-white"
+                      : "text-neutral-500 hover:text-white"
+                    }`}
                 >
                   EN
                 </button>
@@ -137,6 +142,7 @@ const Navbar = ({ onLanguageChange }) => {
 };
 
 Navbar.propTypes = {
+  language: PropTypes.string.isRequired,
   onLanguageChange: PropTypes.func.isRequired,
 };
 
