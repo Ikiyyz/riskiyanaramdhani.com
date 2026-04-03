@@ -248,7 +248,7 @@ const Experience = ({ language }) => {
                   </a>
                 </p>
                 <span className="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4">
-                  Februari 2024 - Mei 2024
+                  2020 - Sekarang
                 </span>
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   {language === "id"
@@ -299,7 +299,7 @@ const Experience = ({ language }) => {
                   </a>
                 </p>
                 <span className="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4">
-                  Februari 2024 - Mei 2024
+                  2021
                 </span>
                 <div className="space-y-2">
                   <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
@@ -356,7 +356,7 @@ const Experience = ({ language }) => {
                   </a>
                 </p>
                 <span className="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4">
-                  Februari 2024 - Mei 2024
+                  2023
                 </span>
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   {language === "id"
@@ -392,7 +392,7 @@ const Experience = ({ language }) => {
                   PT Topindoku Jatinangor
                 </p>
                 <span className="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4">
-                  Mei 2022 - Agustus 2022
+                  2018 - 2019
                 </span>
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   {language === "id"
