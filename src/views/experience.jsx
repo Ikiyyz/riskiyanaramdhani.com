@@ -21,7 +21,7 @@ const Experience = ({ language }) => {
                 style={{ aspectRatio: "1919 / 864" }}
               >
                 <img
-                  src="/assets/project-bootcamp4.jpg"
+                  src="/assets/project-bootcamp4.png"
                   alt="Next-POS"
                   className="w-full h-full object-cover object-center"
                   loading="eager"
@@ -221,7 +221,7 @@ const Experience = ({ language }) => {
                 style={{ aspectRatio: "1919 / 864" }}
               >
                 <img
-                  src="/assets/project-bootcamp1.jpg"
+                  src="/assets/project-bootcamp1.png"
                   alt="Backend Developer"
                   className="w-full h-full object-cover object-center"
                   loading="eager"
@@ -248,7 +248,7 @@ const Experience = ({ language }) => {
                   </a>
                 </p>
                 <span className="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4">
-                  2020 - Sekarang
+                  2024 Februari - Juni 2024
                 </span>
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   {language === "id"
@@ -273,7 +273,7 @@ const Experience = ({ language }) => {
                 style={{ aspectRatio: "1919 / 864" }}
               >
                 <img
-                  src="/assets/project-bootcamp2.jpg"
+                  src="/assets/project-bootcamp2.png"
                   alt="Project React"
                   className="w-full h-full object-cover object-center"
                   loading="lazy"
@@ -299,7 +299,7 @@ const Experience = ({ language }) => {
                   </a>
                 </p>
                 <span className="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4">
-                  2021
+                  2024 Februari - Juni 2024
                 </span>
                 <div className="space-y-2">
                   <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
@@ -330,7 +330,7 @@ const Experience = ({ language }) => {
                 style={{ aspectRatio: "1919 / 864" }}
               >
                 <img
-                  src="/assets/project-bootcamp3.jpg"
+                  src="/assets/project-bootcamp3.png"
                   alt="SportStat API"
                   className="w-full h-full object-cover object-center"
                   loading="lazy"
@@ -356,7 +356,7 @@ const Experience = ({ language }) => {
                   </a>
                 </p>
                 <span className="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4">
-                  2023
+                  2024 Februari - Juni 2024
                 </span>
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   {language === "id"
@@ -392,7 +392,7 @@ const Experience = ({ language }) => {
                   PT Topindoku Jatinangor
                 </p>
                 <span className="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4">
-                  2018 - 2019
+                  2022 Mei - Agustus 2022
                 </span>
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   {language === "id"
